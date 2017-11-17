@@ -12,6 +12,9 @@
 #define ScreenW [UIScreen mainScreen].bounds.size.width
 #define ScreenH [UIScreen mainScreen].bounds.size.height
 
+static CGFloat const margin = 5;
+static CGFloat const count = 4;
+
 @interface ShowVideoController () <UICollectionViewDelegate, UICollectionViewDataSource>
 
 @end
@@ -31,11 +34,11 @@
     
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     
-    CGFloat itemW = (ScreenW - 5 * 5) / 4;
+    CGFloat itemW = (ScreenW - margin * (count + 1)) / count;
     
     layout.itemSize = CGSizeMake(itemW, itemW);
-    layout.minimumLineSpacing = 5;
-    layout.minimumInteritemSpacing = 0;
+    layout.minimumLineSpacing = margin;
+    layout.minimumInteritemSpacing = 0.0f;
     
     UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, ScreenW, ScreenH) collectionViewLayout:layout];
     collectionView.contentInset = UIEdgeInsetsMake(5, 5, 5, 5);
