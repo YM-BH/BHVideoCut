@@ -17,7 +17,18 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="154" height="127"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1pi-6O-14n">
+                        <rect key="frame" x="0.0" y="0.0" width="154" height="127"/>
+                    </imageView>
+                </subviews>
             </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="1pi-6O-14n" secondAttribute="bottom" id="T8V-T8-PgI"/>
+                <constraint firstItem="1pi-6O-14n" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ZJf-wv-BD0"/>
+                <constraint firstItem="1pi-6O-14n" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bRS-ez-12t"/>
+                <constraint firstAttribute="trailing" secondItem="1pi-6O-14n" secondAttribute="trailing" id="fiU-62-ZLI"/>
+            </constraints>
             <size key="customSize" width="154" height="127"/>
             <point key="canvasLocation" x="86" y="131.5"/>
         </collectionViewCell>

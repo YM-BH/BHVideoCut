@@ -15,6 +15,8 @@
 		E1A363501FBE883500D467B4 /* ShowVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A3634F1FBE883500D467B4 /* ShowVideoController.m */; };
 		E1A3635D1FBE90FB00D467B4 /* ShowVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A3635B1FBE90FB00D467B4 /* ShowVideoCell.m */; };
 		E1A3635E1FBE90FB00D467B4 /* ShowVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1A3635C1FBE90FB00D467B4 /* ShowVideoCell.xib */; };
+		E1A363621FBEBF8D00D467B4 /* VideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A363611FBEBF8D00D467B4 /* VideoModel.m */; };
+		E1A363651FBEBF9E00D467B4 /* VideoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A363641FBEBF9E00D467B4 /* VideoManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,10 @@
 		E1A3635A1FBE90FB00D467B4 /* ShowVideoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowVideoCell.h; sourceTree = "<group>"; };
 		E1A3635B1FBE90FB00D467B4 /* ShowVideoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowVideoCell.m; sourceTree = "<group>"; };
 		E1A3635C1FBE90FB00D467B4 /* ShowVideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowVideoCell.xib; sourceTree = "<group>"; };
+		E1A363601FBEBF8D00D467B4 /* VideoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoModel.h; sourceTree = "<group>"; };
+		E1A363611FBEBF8D00D467B4 /* VideoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoModel.m; sourceTree = "<group>"; };
+		E1A363631FBEBF9E00D467B4 /* VideoManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoManager.h; sourceTree = "<group>"; };
+		E1A363641FBEBF9E00D467B4 /* VideoManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,7 @@
 		E1A363371FBE828C00D467B4 /* VideoCutDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E1A3635F1FBEBE7900D467B4 /* Tools */,
 				E1A363531FBE8F7E00D467B4 /* Model */,
 				E1A363541FBE8F7E00D467B4 /* View */,
 				E1A363521FBE8F7E00D467B4 /* ViewController */,
@@ -97,6 +104,8 @@
 		E1A363531FBE8F7E00D467B4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E1A363601FBEBF8D00D467B4 /* VideoModel.h */,
+				E1A363611FBEBF8D00D467B4 /* VideoModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -109,6 +118,15 @@
 				E1A3635C1FBE90FB00D467B4 /* ShowVideoCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		E1A3635F1FBEBE7900D467B4 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				E1A363631FBEBF9E00D467B4 /* VideoManager.h */,
+				E1A363641FBEBF9E00D467B4 /* VideoManager.m */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,9 +202,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1A363501FBE883500D467B4 /* ShowVideoController.m in Sources */,
+				E1A363621FBEBF8D00D467B4 /* VideoModel.m in Sources */,
 				E1A363481FBE828C00D467B4 /* main.m in Sources */,
 				E1A3635D1FBE90FB00D467B4 /* ShowVideoCell.m in Sources */,
 				E1A3633A1FBE828C00D467B4 /* AppDelegate.m in Sources */,
+				E1A363651FBEBF9E00D467B4 /* VideoManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
