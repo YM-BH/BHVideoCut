@@ -8,6 +8,7 @@
 
 #import "ShowVideoController.h"
 #import "ShowVideoCell.h"
+#import "VideoManager.h"
 
 #define ScreenW [UIScreen mainScreen].bounds.size.width
 #define ScreenH [UIScreen mainScreen].bounds.size.height
@@ -17,12 +18,16 @@ static CGFloat const count = 4;
 
 @interface ShowVideoController () <UICollectionViewDelegate, UICollectionViewDataSource>
 
+@property (strong, nonatomic) NSArray *videoList;
+
 @end
 
 @implementation ShowVideoController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.videoList = [VideoManager getVideoList];
     
     [self setupCollectionView];
 }

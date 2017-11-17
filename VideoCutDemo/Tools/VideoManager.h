@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <Photos/Photos.h>
 @interface VideoManager : NSObject
+
+/**
+ 获取视频列表
+
+ @return 模型数组
+ */
++ (NSArray *)getVideoList;
 
 @end
