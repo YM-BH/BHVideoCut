@@ -11,8 +11,29 @@
 
 @implementation VideoManager
 
++ (VidepAuthorizeStatus)getAuthorizeStaus
+{
+    PHAuthorizationStatus status = [PHPhotoLibrary authorizationStatus];
+    
+    if (status == PHAuthorizationStatusRestricted || status == PHAuthorizationStatusDenied) {
+        NSLog(@"拒绝");
+        
+        return VidepAuthorizeStatusRejected;
+    }else if (status == PHAuthorizationStatusNotDetermined) {
+        NSLog(@"未决定");
+        return VidepAuthorizeStatusNotDetertmined;
+    }else if (status == PHAuthorizationStatusAuthorized) {
+        NSLog(@"授权");
+        return VidepAuthorizeStatusAuthorize;
+    }else {
+        return VidepAuthorizeStatusUnkowned;
+    }
+    
+}
+
 + (NSArray *)getVideoList
 {
+    
     NSMutableArray *modelsArr = [NSMutableArray array];
     PHFetchResult *result = [PHAsset fetchAssetsWithMediaType:PHAssetMediaTypeVideo options:nil];
     

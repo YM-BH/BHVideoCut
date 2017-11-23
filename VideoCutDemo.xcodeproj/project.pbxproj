@@ -17,6 +17,7 @@
 		E1A3635E1FBE90FB00D467B4 /* ShowVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1A3635C1FBE90FB00D467B4 /* ShowVideoCell.xib */; };
 		E1A363621FBEBF8D00D467B4 /* VideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A363611FBEBF8D00D467B4 /* VideoModel.m */; };
 		E1A363651FBEBF9E00D467B4 /* VideoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A363641FBEBF9E00D467B4 /* VideoManager.m */; };
+		E1A363681FBEC60500D467B4 /* ChooseVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A363671FBEC60500D467B4 /* ChooseVideoController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		E1A363611FBEBF8D00D467B4 /* VideoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoModel.m; sourceTree = "<group>"; };
 		E1A363631FBEBF9E00D467B4 /* VideoManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoManager.h; sourceTree = "<group>"; };
 		E1A363641FBEBF9E00D467B4 /* VideoManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoManager.m; sourceTree = "<group>"; };
+		E1A363661FBEC60500D467B4 /* ChooseVideoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChooseVideoController.h; sourceTree = "<group>"; };
+		E1A363671FBEC60500D467B4 /* ChooseVideoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChooseVideoController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,8 @@
 			children = (
 				E1A3634E1FBE883500D467B4 /* ShowVideoController.h */,
 				E1A3634F1FBE883500D467B4 /* ShowVideoController.m */,
+				E1A363661FBEC60500D467B4 /* ChooseVideoController.h */,
+				E1A363671FBEC60500D467B4 /* ChooseVideoController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -203,6 +208,7 @@
 			files = (
 				E1A363501FBE883500D467B4 /* ShowVideoController.m in Sources */,
 				E1A363621FBEBF8D00D467B4 /* VideoModel.m in Sources */,
+				E1A363681FBEC60500D467B4 /* ChooseVideoController.m in Sources */,
 				E1A363481FBE828C00D467B4 /* main.m in Sources */,
 				E1A3635D1FBE90FB00D467B4 /* ShowVideoCell.m in Sources */,
 				E1A3633A1FBE828C00D467B4 /* AppDelegate.m in Sources */,

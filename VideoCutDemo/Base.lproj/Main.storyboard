@@ -25,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="-470" y="-41"/>
         </scene>
-        <!--视频展示-->
+        <!--视频选择-->
         <scene sceneID="fRm-lX-kWl">
             <objects>
-                <viewController id="0bz-xf-wWa" customClass="ShowVideoController" sceneMemberID="viewController">
+                <viewController id="0bz-xf-wWa" customClass="ChooseVideoController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="box-gH-jcP"/>
                         <viewControllerLayoutGuide type="bottom" id="qOB-dq-L1e"/>
@@ -36,9 +36,22 @@
                     <view key="view" contentMode="scaleToFill" id="m3m-MR-bHL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2L-u0-pnu">
+                                <rect key="frame" x="149" y="318.5" width="77" height="30"/>
+                                <state key="normal" title="去选择视频"/>
+                                <connections>
+                                    <action selector="chooseVideo:" destination="0bz-xf-wWa" eventType="touchUpInside" id="4ue-lH-A0j"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="U2L-u0-pnu" firstAttribute="centerY" secondItem="m3m-MR-bHL" secondAttribute="centerY" id="1bw-XF-ZuG"/>
+                            <constraint firstItem="U2L-u0-pnu" firstAttribute="centerX" secondItem="m3m-MR-bHL" secondAttribute="centerX" id="kMq-4M-E5V"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="视频展示" id="5P2-4Z-Zjh"/>
+                    <navigationItem key="navigationItem" title="视频选择" id="5P2-4Z-Zjh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1rB-mf-ZEN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

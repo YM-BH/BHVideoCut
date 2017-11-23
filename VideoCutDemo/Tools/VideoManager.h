@@ -8,6 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import <Photos/Photos.h>
+
+typedef NS_ENUM(NSInteger, VidepAuthorizeStatus) {
+    
+    VidepAuthorizeStatusAuthorize = 0,
+    VidepAuthorizeStatusRejected,
+    VidepAuthorizeStatusNotDetertmined,
+    VidepAuthorizeStatusUnkowned
+    
+};
+
+
 @interface VideoManager : NSObject
 
 /**
@@ -16,5 +27,7 @@
  @return 模型数组
  */
 + (NSArray *)getVideoList;
+
++ (VidepAuthorizeStatus)getAuthorizeStaus;
 
 @end
