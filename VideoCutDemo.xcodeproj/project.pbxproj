@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E10B8BA61FC93D0800069414 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E10B8BA51FC93D0800069414 /* EditViewController.m */; };
+		E10B8BA91FC93DC600069414 /* SAVideoRangeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = E10B8BA81FC93DC600069414 /* SAVideoRangeSlider.m */; };
+		E10B8BAC1FC93DFD00069414 /* LZImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E10B8BAA1FC93DFD00069414 /* LZImageView.m */; };
+		E10B8BAF1FC951D100069414 /* SCVideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E10B8BAD1FC951D100069414 /* SCVideoPlayerView.m */; };
+		E10B8BB21FC9522100069414 /* SCPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E10B8BB01FC9522100069414 /* SCPlayer.m */; };
+		E10B8BB51FC952DA00069414 /* SCWeakSelectorTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = E10B8BB31FC952D900069414 /* SCWeakSelectorTarget.m */; };
+		E10B8BB81FC952EC00069414 /* SCImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E10B8BB71FC952EC00069414 /* SCImageView.m */; };
+		E10B8BBB1FC9531400069414 /* SCFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = E10B8BB91FC9531300069414 /* SCFilter.m */; };
+		E10B8BBE1FC9532500069414 /* SCContext.m in Sources */ = {isa = PBXBuildFile; fileRef = E10B8BBD1FC9532500069414 /* SCContext.m */; };
+		E10B8BC11FC9533B00069414 /* SCFilterAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E10B8BC01FC9533A00069414 /* SCFilterAnimation.m */; };
+		E10B8BC41FC9534F00069414 /* SCSampleBufferHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = E10B8BC31FC9534F00069414 /* SCSampleBufferHolder.m */; };
 		E1A3633A1FBE828C00D467B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A363391FBE828C00D467B4 /* AppDelegate.m */; };
 		E1A363401FBE828C00D467B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A3633E1FBE828C00D467B4 /* Main.storyboard */; };
 		E1A363421FBE828C00D467B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1A363411FBE828C00D467B4 /* Assets.xcassets */; };
@@ -21,6 +32,28 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E10B8BA41FC93D0800069414 /* EditViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
+		E10B8BA51FC93D0800069414 /* EditViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
+		E10B8BA71FC93DC600069414 /* SAVideoRangeSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAVideoRangeSlider.h; sourceTree = "<group>"; };
+		E10B8BA81FC93DC600069414 /* SAVideoRangeSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAVideoRangeSlider.m; sourceTree = "<group>"; };
+		E10B8BAA1FC93DFD00069414 /* LZImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZImageView.m; sourceTree = "<group>"; };
+		E10B8BAB1FC93DFD00069414 /* LZImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZImageView.h; sourceTree = "<group>"; };
+		E10B8BAD1FC951D100069414 /* SCVideoPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCVideoPlayerView.m; sourceTree = "<group>"; };
+		E10B8BAE1FC951D100069414 /* SCVideoPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCVideoPlayerView.h; sourceTree = "<group>"; };
+		E10B8BB01FC9522100069414 /* SCPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCPlayer.m; sourceTree = "<group>"; };
+		E10B8BB11FC9522100069414 /* SCPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCPlayer.h; sourceTree = "<group>"; };
+		E10B8BB31FC952D900069414 /* SCWeakSelectorTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCWeakSelectorTarget.m; sourceTree = "<group>"; };
+		E10B8BB41FC952DA00069414 /* SCWeakSelectorTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCWeakSelectorTarget.h; sourceTree = "<group>"; };
+		E10B8BB61FC952EC00069414 /* SCImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCImageView.h; sourceTree = "<group>"; };
+		E10B8BB71FC952EC00069414 /* SCImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCImageView.m; sourceTree = "<group>"; };
+		E10B8BB91FC9531300069414 /* SCFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFilter.m; sourceTree = "<group>"; };
+		E10B8BBA1FC9531400069414 /* SCFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFilter.h; sourceTree = "<group>"; };
+		E10B8BBC1FC9532500069414 /* SCContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCContext.h; sourceTree = "<group>"; };
+		E10B8BBD1FC9532500069414 /* SCContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCContext.m; sourceTree = "<group>"; };
+		E10B8BBF1FC9533A00069414 /* SCFilterAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFilterAnimation.h; sourceTree = "<group>"; };
+		E10B8BC01FC9533A00069414 /* SCFilterAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFilterAnimation.m; sourceTree = "<group>"; };
+		E10B8BC21FC9534F00069414 /* SCSampleBufferHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSampleBufferHolder.h; sourceTree = "<group>"; };
+		E10B8BC31FC9534F00069414 /* SCSampleBufferHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSampleBufferHolder.m; sourceTree = "<group>"; };
 		E1A363351FBE828C00D467B4 /* VideoCutDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoCutDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A363381FBE828C00D467B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E1A363391FBE828C00D467B4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -91,6 +124,26 @@
 		E1A363511FBE8D3200D467B4 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				E10B8BAB1FC93DFD00069414 /* LZImageView.h */,
+				E10B8BAA1FC93DFD00069414 /* LZImageView.m */,
+				E10B8BA71FC93DC600069414 /* SAVideoRangeSlider.h */,
+				E10B8BA81FC93DC600069414 /* SAVideoRangeSlider.m */,
+				E10B8BAE1FC951D100069414 /* SCVideoPlayerView.h */,
+				E10B8BAD1FC951D100069414 /* SCVideoPlayerView.m */,
+				E10B8BB11FC9522100069414 /* SCPlayer.h */,
+				E10B8BB01FC9522100069414 /* SCPlayer.m */,
+				E10B8BB41FC952DA00069414 /* SCWeakSelectorTarget.h */,
+				E10B8BB31FC952D900069414 /* SCWeakSelectorTarget.m */,
+				E10B8BB61FC952EC00069414 /* SCImageView.h */,
+				E10B8BB71FC952EC00069414 /* SCImageView.m */,
+				E10B8BBA1FC9531400069414 /* SCFilter.h */,
+				E10B8BB91FC9531300069414 /* SCFilter.m */,
+				E10B8BBC1FC9532500069414 /* SCContext.h */,
+				E10B8BBD1FC9532500069414 /* SCContext.m */,
+				E10B8BBF1FC9533A00069414 /* SCFilterAnimation.h */,
+				E10B8BC01FC9533A00069414 /* SCFilterAnimation.m */,
+				E10B8BC21FC9534F00069414 /* SCSampleBufferHolder.h */,
+				E10B8BC31FC9534F00069414 /* SCSampleBufferHolder.m */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -98,10 +151,12 @@
 		E1A363521FBE8F7E00D467B4 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				E1A3634E1FBE883500D467B4 /* ShowVideoController.h */,
-				E1A3634F1FBE883500D467B4 /* ShowVideoController.m */,
 				E1A363661FBEC60500D467B4 /* ChooseVideoController.h */,
 				E1A363671FBEC60500D467B4 /* ChooseVideoController.m */,
+				E1A3634E1FBE883500D467B4 /* ShowVideoController.h */,
+				E1A3634F1FBE883500D467B4 /* ShowVideoController.m */,
+				E10B8BA41FC93D0800069414 /* EditViewController.h */,
+				E10B8BA51FC93D0800069414 /* EditViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -207,12 +262,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1A363501FBE883500D467B4 /* ShowVideoController.m in Sources */,
+				E10B8BBE1FC9532500069414 /* SCContext.m in Sources */,
 				E1A363621FBEBF8D00D467B4 /* VideoModel.m in Sources */,
+				E10B8BAF1FC951D100069414 /* SCVideoPlayerView.m in Sources */,
+				E10B8BAC1FC93DFD00069414 /* LZImageView.m in Sources */,
+				E10B8BB21FC9522100069414 /* SCPlayer.m in Sources */,
+				E10B8BC11FC9533B00069414 /* SCFilterAnimation.m in Sources */,
+				E10B8BB51FC952DA00069414 /* SCWeakSelectorTarget.m in Sources */,
 				E1A363681FBEC60500D467B4 /* ChooseVideoController.m in Sources */,
 				E1A363481FBE828C00D467B4 /* main.m in Sources */,
+				E10B8BB81FC952EC00069414 /* SCImageView.m in Sources */,
+				E10B8BA61FC93D0800069414 /* EditViewController.m in Sources */,
 				E1A3635D1FBE90FB00D467B4 /* ShowVideoCell.m in Sources */,
+				E10B8BBB1FC9531400069414 /* SCFilter.m in Sources */,
 				E1A3633A1FBE828C00D467B4 /* AppDelegate.m in Sources */,
+				E10B8BC41FC9534F00069414 /* SCSampleBufferHolder.m in Sources */,
 				E1A363651FBEBF9E00D467B4 /* VideoManager.m in Sources */,
+				E10B8BA91FC93DC600069414 /* SAVideoRangeSlider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

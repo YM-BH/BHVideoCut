@@ -10,6 +10,7 @@
 #import "ShowVideoController.h"
 #import "VideoManager.h"
 
+
 @interface ChooseVideoController ()
 
 @end
@@ -27,7 +28,7 @@
     switch (status) {
         case VidepAuthorizeStatusAuthorize: {
             // 第二次进入时候，如果已经授权，走这里
-            NSLog(@"授权");
+//            NSLog(@"授权");
             [self jumpToShowVideoVC];
         }
             break;

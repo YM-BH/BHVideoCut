@@ -9,6 +9,7 @@
 #import "ShowVideoController.h"
 #import "ShowVideoCell.h"
 #import "VideoManager.h"
+#import "EditViewController.h"
 
 #define ScreenW [UIScreen mainScreen].bounds.size.width
 #define ScreenH [UIScreen mainScreen].bounds.size.height
@@ -27,6 +28,7 @@ static CGFloat const count = 4;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"选择视频";
     self.videoList = [VideoManager getVideoList];
     
     [self setupCollectionView];
@@ -72,6 +74,13 @@ static CGFloat const count = 4;
     cell.videoModel = self.videoList[indexPath.row];
     
     return cell;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    EditViewController *editVc = [[EditViewController alloc] init];
+    editVc.videoModel = self.videoList[indexPath.row];
+    [self.navigationController pushViewController:editVc animated:YES];
 }
 
 @end

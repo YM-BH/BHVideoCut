@@ -21,9 +21,18 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1pi-6O-14n">
                         <rect key="frame" x="0.0" y="0.0" width="154" height="127"/>
                     </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video" translatesAutoresizingMaskIntoConstraints="NO" id="KF1-Ty-oNE">
+                        <rect key="frame" x="131" y="104" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="Gxz-SD-1UC"/>
+                            <constraint firstAttribute="height" constant="20" id="Yes-Cg-XaM"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
             </view>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="KF1-Ty-oNE" secondAttribute="bottom" constant="3" id="Css-mm-1eV"/>
+                <constraint firstAttribute="trailing" secondItem="KF1-Ty-oNE" secondAttribute="trailing" constant="3" id="JtU-3l-d2d"/>
                 <constraint firstAttribute="bottom" secondItem="1pi-6O-14n" secondAttribute="bottom" id="T8V-T8-PgI"/>
                 <constraint firstItem="1pi-6O-14n" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ZJf-wv-BD0"/>
                 <constraint firstItem="1pi-6O-14n" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bRS-ez-12t"/>
@@ -36,4 +45,7 @@
             <point key="canvasLocation" x="86" y="131.5"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="video" width="20" height="20"/>
+    </resources>
 </document>

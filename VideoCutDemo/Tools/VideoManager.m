@@ -16,14 +16,14 @@
     PHAuthorizationStatus status = [PHPhotoLibrary authorizationStatus];
     
     if (status == PHAuthorizationStatusRestricted || status == PHAuthorizationStatusDenied) {
-        NSLog(@"拒绝");
+//        NSLog(@"拒绝");
         
         return VidepAuthorizeStatusRejected;
     }else if (status == PHAuthorizationStatusNotDetermined) {
-        NSLog(@"未决定");
+//        NSLog(@"未决定");
         return VidepAuthorizeStatusNotDetertmined;
     }else if (status == PHAuthorizationStatusAuthorized) {
-        NSLog(@"授权");
+//        NSLog(@"授权");
         return VidepAuthorizeStatusAuthorize;
     }else {
         return VidepAuthorizeStatusUnkowned;
@@ -64,6 +64,23 @@
             }
         }
         
+        
+    }];
+}
+
++ (void)getURLAssetWithAsset:(PHAsset *)asset completion:(urlAssetBlock)completion
+{
+    // 保证其他格式（比如慢动作）视频为正常视频
+    PHVideoRequestOptions *options = [[PHVideoRequestOptions alloc] init];
+    options.version = PHVideoRequestOptionsVersionOriginal;
+    
+    [[PHCachingImageManager defaultManager] requestAVAssetForVideo:asset options:options resultHandler:^(AVAsset * _Nullable asset, AVAudioMix * _Nullable audioMix, NSDictionary * _Nullable info) {
+       
+        AVURLAsset *urlAsset = (AVURLAsset *)asset;
+        
+        if (completion) {
+            completion(urlAsset);
+        }
         
     }];
 }

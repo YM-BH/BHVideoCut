@@ -10,6 +10,7 @@
 #import <Photos/Photos.h>
 
 typedef void(^videoImgBlock)(UIImage *videoImage);
+typedef void(^urlAssetBlock)(AVURLAsset *urlAsset);
 
 typedef NS_ENUM(NSInteger, VidepAuthorizeStatus) {
     
@@ -39,5 +40,14 @@ typedef NS_ENUM(NSInteger, VidepAuthorizeStatus) {
 + (VidepAuthorizeStatus)getAuthorizeStaus;
 
 + (void)getVideoPhotoWithAsset:(PHAsset *)asset size:(CGSize)size completion:(videoImgBlock)completion;
+
+
+/**
+ 获取 AVURLAsset
+
+ @param asset PHAsset
+ @param completion 回调urlAsset
+ */
++ (void)getURLAssetWithAsset:(PHAsset *)asset completion:(urlAssetBlock)completion;
 
 @end
