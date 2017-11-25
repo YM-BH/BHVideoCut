@@ -7,12 +7,30 @@
 //
 
 #import "ShowVideoCell.h"
+#import "VideoModel.h"
+#import "VideoManager.h"
+
+@interface ShowVideoCell ()
+
+@property (weak, nonatomic) IBOutlet UIImageView *videoImgView;
+
+
+@end
+
 
 @implementation ShowVideoCell
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
+- (void)setVideoModel:(VideoModel *)videoModel
+{
+    _videoModel = videoModel;
+    
+    CGFloat w = CGRectGetWidth(self.bounds);
+    
+    [VideoManager getVideoPhotoWithAsset:videoModel.asset size:CGSizeMake(w * 1.3, w * 1.3) completion:^(UIImage *videoImage) {
+       
+        self.videoImgView.image = videoImage;
+        
+    }];
 }
 
 @end

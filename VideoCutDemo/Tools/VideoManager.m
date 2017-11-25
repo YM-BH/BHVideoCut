@@ -47,4 +47,25 @@
     
     return modelsArr;
 }
+
++ (void)getVideoPhotoWithAsset:(PHAsset *)asset size:(CGSize)size completion:(videoImgBlock)completion 
+{
+    [[PHCachingImageManager defaultManager] requestImageForAsset:asset targetSize:size contentMode:PHImageContentModeAspectFill options:nil resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
+       
+        BOOL downloadFinished = ![info objectForKey:PHImageCancelledKey] && ![info objectForKey:PHImageErrorKey];
+        
+        // 加上这个key 会不返回缩略图 
+        // && ![[info objectForKey:PHImageResultIsDegradedKey] boolValue];
+        
+        if (downloadFinished) {
+//            NSLog(@"%@",result);
+            if (completion) {
+                completion(result);
+            }
+        }
+        
+        
+    }];
+}
+
 @end

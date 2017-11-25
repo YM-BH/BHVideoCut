@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class VideoModel;
+
 @interface ShowVideoCell : UICollectionViewCell
+
+/**
+ 视频模型
+ */
+@property (strong, nonatomic) VideoModel *videoModel;
 
 @end

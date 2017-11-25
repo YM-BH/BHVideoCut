@@ -46,7 +46,8 @@ static CGFloat const count = 4;
     layout.minimumInteritemSpacing = 0.0f;
     
     UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, ScreenW, ScreenH) collectionViewLayout:layout];
-    collectionView.contentInset = UIEdgeInsetsMake(5, 5, 5, 5);
+    collectionView.backgroundColor = [UIColor lightGrayColor];
+    collectionView.contentInset = UIEdgeInsetsMake(margin, margin, margin, margin);
     
     // 注册cell
     [collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([ShowVideoCell class]) bundle:nil] forCellWithReuseIdentifier:NSStringFromClass([ShowVideoCell class])];
@@ -60,13 +61,15 @@ static CGFloat const count = 4;
 #pragma mark - UICollectionViewDelegate && UICollectionViewDataSource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 10;
+    return self.videoList.count;
 }
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     ShowVideoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([ShowVideoCell class]) forIndexPath:indexPath];
     cell.backgroundColor = [UIColor orangeColor];
+    
+    cell.videoModel = self.videoList[indexPath.row];
     
     return cell;
 }

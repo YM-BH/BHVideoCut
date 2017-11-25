@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <Photos/Photos.h>
 
+typedef void(^videoImgBlock)(UIImage *videoImage);
+
 typedef NS_ENUM(NSInteger, VidepAuthorizeStatus) {
     
     VidepAuthorizeStatusAuthorize = 0,
@@ -28,6 +30,14 @@ typedef NS_ENUM(NSInteger, VidepAuthorizeStatus) {
  */
 + (NSArray *)getVideoList;
 
+
+/**
+ 获取授权状态
+
+ @return 授权状态
+ */
 + (VidepAuthorizeStatus)getAuthorizeStaus;
+
++ (void)getVideoPhotoWithAsset:(PHAsset *)asset size:(CGSize)size completion:(videoImgBlock)completion;
 
 @end
