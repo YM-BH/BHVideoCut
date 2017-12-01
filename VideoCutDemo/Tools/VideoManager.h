@@ -41,6 +41,13 @@ typedef NS_ENUM(NSInteger, VidepAuthorizeStatus) {
  */
 + (VidepAuthorizeStatus)getAuthorizeStaus;
 
+/**
+ 获取视频封面图
+
+ @param asset PHAsset
+ @param size 大小
+ @param completion 回调image
+ */
 + (void)getVideoPhotoWithAsset:(PHAsset *)asset size:(CGSize)size completion:(videoImgBlock)completion;
 
 
