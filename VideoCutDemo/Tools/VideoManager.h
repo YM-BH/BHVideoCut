@@ -11,6 +11,7 @@
 
 typedef void(^videoImgBlock)(UIImage *videoImage);
 typedef void(^urlAssetBlock)(AVURLAsset *urlAsset);
+typedef void(^outputBlock)(NSURL *outputURL);
 
 typedef NS_ENUM(NSInteger, VidepAuthorizeStatus) {
     
@@ -23,6 +24,7 @@ typedef NS_ENUM(NSInteger, VidepAuthorizeStatus) {
 
 
 @interface VideoManager : NSObject
+
 
 /**
  获取视频列表
@@ -49,5 +51,16 @@ typedef NS_ENUM(NSInteger, VidepAuthorizeStatus) {
  @param completion 回调urlAsset
  */
 + (void)getURLAssetWithAsset:(PHAsset *)asset completion:(urlAssetBlock)completion;
+
+
+/**
+ 根据时间裁剪
+
+ @param avAsset avAsset
+ @param startTime 起始时间
+ @param endTime 结束时间
+ @param completion 回调视频url
+ */
++ (void)cutVideoWithAVAsset:(AVAsset *)avAsset startTime:(CGFloat)startTime endTime:(CGFloat)endTime completion:(outputBlock)completion;
 
 @end
